@@ -7,22 +7,35 @@ def shuffle(shuffle_cards):
 
 def deal():
     '''A function that will give each player 7 cards from the deck'''
-    # 1. get 7 cards from deck and give it to player, get 7 cards from deck and give it to computer.
-    # 2. place one card in discard pile.
-    # 3. show player their cards and the top card (in the discard pile)
-    return
+    for i in range(7):
+        card = random.choice(deck)
+        player_cards.append(card)
+        deck.remove(card)
+
+    for i in range(7):
+        card = random.choice(deck)
+        computer_cards.append(card)
+        deck.remove(card)
+
+deal()
 
 def draw():
     '''A function that will get the top card in the deck'''
-    # get top card from draw pile.
-    return
+    return deck[-1]
 
-def users_turn():
+
+def top_card():
+    deck.random 
+    return top_card
+
+def player_turn():
     '''A function that handles the user's turn'''
-    # 1. show user list of options:
-    #  - a. play, b. draw
-    # if play, check if allowed play. 
-    # if draw, give them top card in draw pile.
+    print(player_cards)
+    play_card = input("Enter card would you like to play: ")
+    print(play_card)
+    while play_card == top_card:
+        play_card.append(top_card)
+
 
 
 def computer_turn():
